@@ -50,6 +50,7 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
         btnExit.setOnClickListener(this)
         ftpclient = MyFTPClientFunctions()
     }
+
     override fun onClick(v: View) {
         when (v.id) {
             R.id.btnLoginFtp -> if (isOnline(this@MainActivity)) {
